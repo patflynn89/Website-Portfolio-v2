@@ -1,6 +1,5 @@
-$primary-color: green;
+@import "config.scss";
 
 body {
     background: $primary-color;
-    color: #daff00;
 }
