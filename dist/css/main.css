@@ -47,6 +47,15 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%; }
+  header .menu-nav {
+    display: none; }
+  header .menu-btn {
+    margin: 30px 93%; }
+    header .menu-btn .btn-line {
+      border-radius: 20px;
+      width: 30px;
+      border: 2px solid;
+      margin: 5px; }
 
 .text-secondary {
   color: #eece1a; }
