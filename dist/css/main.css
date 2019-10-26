@@ -51,6 +51,9 @@ header {
     display: none; }
   header .menu-btn {
     margin: 30px 93%; }
+    header .menu-btn:hover {
+      transition: all 0.5s ease-out;
+      transform: rotate(45deg); }
     header .menu-btn .btn-line {
       border-radius: 20px;
       width: 30px;
@@ -68,6 +71,7 @@ main {
     main .icons a {
       padding: 0.2rem; }
       main .icons a:hover {
+        display: inline-block;
         color: #eece1a;
         transition: all 0.5s ease-out; }
   main#home {

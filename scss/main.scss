@@ -51,12 +51,20 @@ header {
 
     .menu-btn {
         margin: 30px 93%;
-
+        
+        &:hover {
+                @include easeOut();
+                transform: rotate(45deg);
+               // transform-origin: 50% 0;
+        }
+    
         .btn-line {
             border-radius: 20px;
             width: 30px;
             border: 2px solid;
             margin: 5px;
+
+           
         }
     }
 }
@@ -76,8 +84,10 @@ main {
         padding: 0.2rem;
 
         &:hover {
+            display: inline-block;
             color: $secondary-color;
             @include easeOut();
+           // transform: rotate(30deg);
         }
       }    
     }
