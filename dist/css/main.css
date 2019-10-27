@@ -50,15 +50,22 @@ header {
   header .menu-nav {
     display: none; }
   header .menu-btn {
-    margin: 30px 93%; }
-    header .menu-btn:hover {
-      transition: all 0.5s ease-out;
-      transform: rotate(45deg); }
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    header .menu-btn.close {
+      transform: rotate(180deg);
+      cursor: pointer; }
     header .menu-btn .btn-line {
       border-radius: 20px;
-      width: 30px;
-      border: 2px solid;
-      margin: 5px; }
+      width: 28px;
+      height: 3px;
+      border: 0.5px solid;
+      margin: 0 0 4px 0;
+      background: #fff;
+      transition: all 0.5s ease-out; }
 
 .text-secondary {
   color: #eece1a; }
