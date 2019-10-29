@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/linux-can.jpg);
+    background: url(../img/Server-room_green.png);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -37,7 +37,7 @@ h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     padding: 0.1rem 0.4rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: #2a2a2a; }
 
 a {
   color: #fff;
@@ -56,8 +56,7 @@ header {
     cursor: pointer;
     transition: all 0.5s ease-out; }
     header .menu-btn.close {
-      transform: rotate(180deg);
-      cursor: pointer; }
+      transform: rotate(180deg); }
     header .menu-btn .btn-line {
       border-radius: 20px;
       width: 28px;
@@ -68,19 +67,17 @@ header {
       transition: all 0.5s ease-out; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: green; }
 
 main {
   padding: 4rem;
   height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.2rem; }
-      main .icons a:hover {
-        display: inline-block;
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
+  main .icons a {
+    padding-right: 0.5rem; }
+    main .icons a:hover {
+      display: inline-block;
+      color: green;
+      transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {

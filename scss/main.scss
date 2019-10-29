@@ -31,7 +31,7 @@ h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     padding: 0.1rem 0.4rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgb(42, 42, 42);
     }
 }
 
@@ -58,8 +58,6 @@ header {
 
         &.close {
             transform: rotate(180deg);
-            cursor: pointer;
-            
         }
     
         .btn-line {
@@ -82,20 +80,16 @@ main {
     padding: 4rem;
     height: 100%;
 
-    .icons {
-        margin-top: 1rem;
-
-      a {
-        padding: 0.2rem;
+    .icons a {
+        padding-right: 0.5rem;
 
         &:hover {
             display: inline-block;
             color: $secondary-color;
             @include easeOut();
-           // transform: rotate(30deg);
         }
-      }    
-    }
+    }    
+    
 
     &#home {
         overflow: hidden;
