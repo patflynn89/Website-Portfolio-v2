@@ -57,7 +57,22 @@ header {
         @include easeOut;
 
         &.close {
-            transform: rotate(180deg);
+            //transform: rotate(-45deg);
+            margin: 0;
+        
+            :nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+        
+            :nth-child(2) {
+                display: none;
+                transform: skewY(-50deg);
+            }
+        
+            :nth-child(3) {
+                transform: rotate(-45deg) translate(0px, 0px);
+            }
+
         }
     
         .btn-line {
@@ -77,7 +92,8 @@ header {
 }
 
 main {
-    padding: 4rem;
+    padding-top: 5%;
+    padding-left: 12%;
     height: 100%;
 
     .icons a {
