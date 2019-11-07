@@ -64,7 +64,6 @@ header {
         @include easeOut;
 
         &.close {
-            //transform: rotate(-45deg);
             margin: 0;
         
             :nth-child(1) {
