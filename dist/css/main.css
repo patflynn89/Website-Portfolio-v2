@@ -48,7 +48,13 @@ header {
   z-index: 2;
   width: 100%; }
   header .menu-nav {
-    display: none; }
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer; }
   header .menu-btn {
     position: fixed;
     right: 25px;

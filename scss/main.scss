@@ -47,6 +47,12 @@ header {
 
     .menu-nav {
         display:none;
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer;
     }
 
     .menu-btn {
