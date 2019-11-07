@@ -46,6 +46,7 @@ header {
     width: 100%;
 
     .menu-nav {
+        /* display none, 'cause it's not visible at first. Only if you click on the three solid line at the top right corner the "menu-nav" gets activated */
         display:none;
         position: fixed;
         width: 50%;
