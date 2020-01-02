@@ -1,23 +1,36 @@
 $(document).ready(function () {
 
-    var showMenue = false;
+//Select DOM items
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+const navItems = document.querySelectorAll('.nav-item');    
 
+//Set initial state of menu
+let showMenue = false;
 
-    $(".menu-btn").click(function() {
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
         if (!showMenue) {
-            $(".menu-btn").addClass("close");
+            menuBtn.classList.add('close');
+            menu.classList.add('show');
+            menuNav.classList.add('show');
+            menuBranding.classList.add('show');
+            navItems.forEach(item => item.classList.add('show'));
+            
+            //Set menu state
             showMenue = true;
-            $(".menu-branding").slideDown("slow");          
-            $(".menu-nav").slideDown("slow");
-            $(".menu-branding").show();
-            $(".menu-nav").show();
         } else {
-            $(".menu-btn").removeClass("close");
+            menuBtn.classList.remove('close');
+            menu.classList.remove('show');
+            menuNav.classList.remove('show');
+            menuBranding.classList.remove('show');
+            navItems.forEach(item => item.classList.remove('show'));
+            
+            //Set menu state
             showMenue = false;
-            $(".menu-branding").slideUp("slow");
-            $(".menu-nav").slideUp("slow"); 
-            $(".menu-branding").hide();
-            $(".menu-nav").hide();
         }
-    });
+    }
 });

@@ -61,7 +61,8 @@ header {
 
     .menu-nav {
         /* display none, 'cause it's not visible at first. Only if you click on the three solid line at the top right corner the "menu-nav" gets activated */
-        display: none;
+        visibility: hidden;
+        opacity: 0.9;
         width: 50%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
@@ -69,7 +70,7 @@ header {
         cursor: pointer;
         bottom: 0;
         right: 0;
-        position: absolute;
+        position: fixed;
 
         .nav-item {
             position: relative;
