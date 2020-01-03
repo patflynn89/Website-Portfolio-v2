@@ -9,7 +9,7 @@
 body {
     @include background;
     background: $primary-color;
-    color: rgb(255, 255, 255);
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,7 +33,7 @@ h3 {
         font-size: 1.3rem;
         margin-bottom: 1.5rem;
         padding: 0.1rem 0.4rem;
-        background: rgb(42, 42, 42);
+        background: $primary-color;
     }
 }
 

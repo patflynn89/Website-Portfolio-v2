@@ -1,8 +1,8 @@
-$primary-color: #444;
+$primary-color: rgb(54, 52, 52);
 $secondary-color: #33598c;
 $show-home-image: true;
 $home-image: url(../img/linux-can.jpg);
-$background-opacity: 0.6;
+$background-opacity: 0.7;
 
 
 @mixin easeOut {
@@ -29,6 +29,16 @@ $background-opacity: 0.6;
         }    
     }
 }
+
+//Set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
 
 //Media Query Mixins
 @mixin mediaSm {
